@@ -1,0 +1,31 @@
+<div class="heroes-container">
+  <div>
+    <h2>My Heroes</h2>
+
+    <!--<div>
+      <mat-form-field>
+        <input #heroName matInput placeholder="New hero" />
+      </mat-form-field>
+      <button mat-raised-button color="primary" class="btn-spacer" (click)="add(heroName.value); heroName.value=''">
+        Add
+      </button>
+    </div>-->
+
+    <button mat-raised-button color="primary" class="btn-spacer" (click)="add(heroName.value); heroName.value=''">
+        Add
+    </button>
+    <br>
+    <br>
+
+    <div *ngFor="let hero of heroes" class="hero-list-item">
+      <img class="avatar-hero-list" [src]='hero.avatar_url'>
+      <a routerLink="/detail/{{hero.id}}" class="hero-list-name">{{hero.name}}</a>
+      <div>
+        <button title="edit hero" class="edit-btn-hero" mat-mini-fab color="primary"><i class="fas fa-edit"></i></button>
+        <button title="delete hero" class="btn-spacer-del-hero" (click)="delete(hero)" mat-mini-fab color="warn">x</button>
+      </div>
+    </div>
+  </div>
+
+  <app-hero-management></app-hero-management>
+</div>

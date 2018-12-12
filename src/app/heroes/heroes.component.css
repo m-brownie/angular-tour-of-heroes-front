@@ -1,0 +1,47 @@
+.heroes-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-spacer {
+    margin-left: 10px;
+}
+
+.hero-list-item {
+    max-width: 400px;
+    min-width: 400px;
+    background-color: azure;
+    border-radius: 0.2em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 10px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-spacer-del-hero {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.edit-btn-hero {
+    margin-right: 5px;
+}
+
+.edit-btn-hero i {
+    display: flex;
+}
+
+.hero-list-name {
+    font-size: 1.2em;
+    color: rgb(44, 43, 43);
+}
+
+.avatar-hero-list {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid black;
+}

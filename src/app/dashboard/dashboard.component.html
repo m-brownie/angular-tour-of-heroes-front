@@ -1,0 +1,23 @@
+<h3>Top 5 Heroes<button (click)="refresh();" 
+  class="btn-spacer btn-random"><i class="fas fa-random"></i></button></h3>
+
+<div class="heroes-container">
+  <a *ngFor="let hero of heroes" routerLink="/detail/{{hero.id}}" class="link-card-content">
+      <mat-card class="hero-card">
+        <mat-card-header>
+          <img mat-card-avatar class="avatar-card" [src]='hero.avatar_url'>
+          <mat-card-title>{{ hero.name }}</mat-card-title>
+        </mat-card-header>
+        <img mat-card-image [src]='hero.img_background_url' >
+        <mat-card-content>
+          <p class="dashboard-hero-desc">
+            {{ hero.description }}
+          </p>
+        </mat-card-content>
+      </mat-card>
+  </a>
+</div>
+<br>
+<mat-divider></mat-divider>
+<app-hero-search></app-hero-search>
+<app-logout></app-logout>

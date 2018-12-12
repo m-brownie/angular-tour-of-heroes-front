@@ -1,0 +1,54 @@
+/* DashboardComponent's private CSS styles */
+
+.heroes-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.hero-card {
+  width: 345px;
+  height: 370px;
+  background: #ccc;
+  color: #000000;
+  font-weight: 900;
+}
+
+.link-card-content {
+  text-decoration: none;
+}
+
+.mat-card-title {
+  padding-top: 11px;
+}
+
+.mat-card-image {
+  height: 250px;
+}
+
+.avatar-card {
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.btn-spacer {
+  margin-left: 10px;
+}
+
+.btn-random {
+  padding: 12px 12px;
+  height: 2.5rem;
+  border: 0;
+  border-radius: 50px;
+  font-weight: 500;
+  background: #f96816;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.5s;
+}
+
+.btn-random:hover {
+  background-color: #ff7b39;
+}
